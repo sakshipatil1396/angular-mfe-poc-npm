@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "start:shell": "cd shell && npm start",
+    "start:mfe-dashboard": "cd mfe-dashboard && npm start",
+    "start:mfe-products": "cd mfe-products && npm start",
+    "start:all": "start cmd /k \"cd shell && npm start\" && start cmd /k \"cd mfe-dashboard && npm start\" && start cmd /k \"cd mfe-products && npm start\"",
+    "build:all": "cd shell && npm run build && cd ../mfe-dashboard && npm run build && cd ../mfe-products && npm run build",
+    "install:all": "cd shell && npm install --legacy-peer-deps && cd ../mfe-dashboard && npm install --legacy-peer-deps && cd ../mfe-products && npm install --legacy-peer-deps"
+  },
+  "description": "Angular Microfrontend POC — Native Federation (Modern esbuild)",
+  "private": true
+}
